@@ -48,13 +48,7 @@ const Index = () => {
               <p className="text-muted-foreground text-sm">Conheça e acesse os serviços do INSS</p>
             </div>
           </div>
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-base font-semibold">
-            Entrar com <span className="font-extrabold ml-1">gov.br</span>
-          </Button>
         </div>
-        <p className="container pb-4 text-sm text-muted-foreground">
-          Entre com a senha gov.br ou faça o cadastro.
-        </p>
       </section>
 
       {/* Banner Carousel */}
