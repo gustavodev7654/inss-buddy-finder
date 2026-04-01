@@ -1,5 +1,6 @@
 import GovHeader from "@/components/GovHeader";
 import logo from "@/assets/logo.png";
+import banner from "@/assets/banner.png";
 import ServiceCard from "@/components/ServiceCard";
 import { Button } from "@/components/ui/button";
 import {
