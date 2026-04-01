@@ -90,6 +90,13 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Download Button */}
+      <section className="container py-12 flex justify-center">
+        <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-2xl px-16 py-8 text-2xl font-bold shadow-lg">
+          Download
+        </Button>
+      </section>
+
       {/* Serviços sem senha */}
       <section className="container pb-8">
         <h2 className="text-lg font-semibold text-foreground mb-4">Serviços sem senha</h2>
