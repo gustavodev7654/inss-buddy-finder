@@ -16,7 +16,6 @@ import {
 import { useState, useEffect } from "react";
 
 const bannerMessages = [
-  "Alerta de golpe: golpistas se passam pela Central 135 para enganar segurados.",
   "Recebeu notificação de desconto associativo não autorizado? Solicite análise.",
   "Salas multissensoriais nas agências do INSS.",
   "Informe todos os dados para agilizar seu pedido de aposentadoria.",
