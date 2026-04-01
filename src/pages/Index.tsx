@@ -41,9 +41,7 @@ const Index = () => {
       <section className="bg-card border-b border-border">
         <div className="container py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
-              <span className="text-2xl font-bold text-primary">INSS</span>
-            </div>
+            <img src={logo} alt="Logo" className="h-16 w-16 object-contain" />
             <div>
               <h1 className="text-2xl font-bold text-foreground">Meu INSS</h1>
               <p className="text-muted-foreground text-sm">Conheça e acesse os serviços do INSS</p>
