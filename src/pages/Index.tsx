@@ -85,9 +85,7 @@ const Index = () => {
 
       {/* Download Button */}
       <section className="container py-16 flex flex-col items-center gap-8">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-foreground text-center">
-          BAIXE AGORA E CADASTRE-SE
-        </h2>
+        <img src={banner} alt="Baixe e cadastre-se para receber os benefícios" className="w-full max-w-4xl rounded-xl" />
         <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-3xl px-48 py-24 text-6xl font-bold shadow-2xl">
           Download
         </Button>
